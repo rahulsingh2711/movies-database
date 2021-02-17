@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<title>Movie And Series Database</title>
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 3000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout2.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<div class="wrapper row1">
+  <header id="header" class="hoc clear"> 
+    <div id="logo" class="fl_left">
+      <h1><a href="indexlo.php">Movie And Series Database</a></h1>
+      <h6 >Watch Anything You Want<h6>
+    </div>
+  </header>
+  <nav id="mainav" class="hoc clear">
+    <ul class="clear">
+      <h1 align = "center" style ="font-size:50px;">TV Shows</h1>
+    </ul>
+  </nav>
+</div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://wallpapercave.com/wp/wp4112172.jpg" style="width:100%">
+  <div class="text">Friends</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://vam-image.media.syn-cdn.com/e8/8a/e88a82e8cc288242e04f6960e119cdb0575fc585" style="width:100%">
+  <div class="text">Two Broke Girls</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://goanewshub.com/file/2018/12/Mirzapur-Poster.jpg" style="width:100%">
+  <div class="text">Mirzapur</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<section>
+      <div class="sectiontitle">
+        <h6 class="heading">Favourites</h6>
+        <p></p>
+      </div>
+      <ul class="nospace group overview">
+        <li class="one_third">
+          <figure><img src="https://images-na.ssl-images-amazon.com/images/I/41Au4Z9o%2B-L.jpg">
+            <figcaption>
+              <h6 class="heading" style = "color:white;">Legacies</h6>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="one_third">
+          <figure><img src="https://images-na.ssl-images-amazon.com/images/I/81KANq2QSZL._AC_SL1500_.jpg"  >
+            <figcaption>
+              <h6 class="heading" style = "color:white;">Friends</h6>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="one_third">
+          <figure><a href="#"><img src="https://lh3.googleusercontent.com/proxy/qCTincPJfyumhBwwEt0m9xDhorQSp0lNYeM2Y0OOBU_duTdoQshKiWNP0_DEr0eTgv0B06tni6O_FH1BL3l1UrsDh8amVKaArft9kZCLx2ACTXk" ></a>
+            <figcaption>
+              <h6 class="heading" style = "color:white;">Two Broke Girls</h6>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="one_third">
+          <figure><a href="#"><img src="https://i.pinimg.com/736x/48/9a/7f/489a7f08683db42d463791a7ab33d76d.jpg" ></a>
+            <figcaption>
+              <h6 class="heading" style = "color:white;">Jack Ryan</h6>
+              
+            </figcaption>
+          </figure>
+        </li>
+        <li class="one_third">
+          <figure><img src="https://m.media-amazon.com/images/M/MV5BZjZkY2YxYTgtYmVkOC00NTgwLThjY2YtN2Y1ZWFlZmVhOTQ5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg">
+            <figcaption>
+              <h6 class="heading" style = "color:white;">The Family Man</h6>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="one_third">
+          <figure><img src="https://wallpaperaccess.com/full/2758820.jpg">
+            <figcaption>
+              <h6 class="heading" style = "color:white;">Mirzapur</h6>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</body>
+</html>

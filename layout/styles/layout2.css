@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+
+@import url("font-awesome.min.css");
+@import url("framework.css");
+
+
+
+/* Header
+--------------------------------------------------------------------------------------------------------------- */
+#header{padding:50px 0;}
+
+#header #logo *{margin:0; padding:0; line-height:1;}
+#header #logo h1{margin-top:8px; font-size:24px;}
+#header #logo p{margin-top:-2px; font-size:.9rem; text-transform:lowercase;}
+
+#header #quickinfo{font-size:.8rem; text-transform:uppercase;}
+#header #quickinfo li{margin-right:50px;}
+#header #quickinfo li:last-child{margin-right:0;}
+#header #quickinfo strong{display:block; margin:0 0 -5px 0; padding:0; font-size:.9rem;}
+#header #quickinfo br{display:none;}
+
+h6{
+	font-size:10px;
+}
+#pageintro{padding:180px 0;}
+
+#pageintro article{display:block; max-width:65%; margin:0 auto; text-align:center;}
+#pageintro .heading{margin-bottom:20px; font-size:3rem;}
+#pageintro p:first-of-type{margin:0 0 20px 0; text-transform:uppercase; font-size:1.2rem; letter-spacing:5px;}
+#pageintro footer{margin-top:50px;}
+.container{padding:80px 0;}
+#comments ul{margin:0 0 40px 0; padding:0; list-style:none;}
+#comments li{margin:0 0 10px 0; padding:15px;}
+#comments .avatar{float:right; margin:0 0 10px 10px; padding:3px; border:1px solid;}
+#comments address{font-weight:bold;}
+#comments time{font-size:smaller;}
+#comments .comcont{display:block; margin:0; padding:0;}
+#comments .comcont p{margin:10px 5px 10px 0; padding:0;}
+
+#comments form{display:block; width:100%;}
+#comments input, #comments textarea{width:100%; padding:10px; border:1px solid;}
+#comments textarea{overflow:auto;}
+#comments div{margin-bottom:15px;}
+#comments input[type="submit"], #comments input[type="reset"]{display:inline-block; width:auto; min-width:150px; margin:0; padding:8px 5px; cursor:pointer;}
+button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color:red;
+}
+
+/* Sidebar */
+.container .sidebar{}
+
+.sidebar .sdb_holder{margin-bottom:50px;}
+.sidebar .sdb_holder:last-child{margin-bottom:0;}
+
+
+
+.cta{padding:50px 0;}
+.cta > :first-child{margin-top:10px;}
+.cta > :last-child{margin-bottom:0;}/* Used when elements stack in smaller viewports */
+
+
+
+*, *::before, *::after{transition:all .3s ease-in-out;}
+#mainav form *{transition:none !important;}
+
+
+input, button, .btn, .faico a, #backtotop, img, #introblocks li, #mainav, .overview > li figure a::after, .latest article time, .pagination a, .pagination strong{border-radius:10px;}
+
+--------------------------------------------------------------------------------------------------------------- */
+nav ul, nav ol{margin:0; padding:0; list-style:none;}
+
+#mainav, #breadcrumb, .sidebar nav{line-height:normal;}
+#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:10px; line-height:10px;}
+
+/* Top Navigation */
+#mainav{position:relative; margin-bottom:-30px; padding:0; z-index:999;}
+#mainav ul{text-transform:uppercase;}
+#mainav ul ul{z-index:9999; position:absolute; width:180px; text-transform:none; text-align:left;}
+#mainav ul ul ul{left:180px; top:0;}
+#mainav li{display:block; float:left; position:relative; margin:0; padding:0;}
+#mainav li:last-child{margin-right:0;}
+#mainav li li{width:100%; margin:0;}
+#mainav li a{display:block; padding:20px;}
+#mainav li li a{border:solid; border-width:0 0 1px 0;}
+#mainav .drop{padding-left:15px;}
+#mainav li li a, #mainav li li .drop{display:block; margin:0; padding:10px 15px;}
+#mainav .drop::after, #mainav li li .drop::after{content:"\f0d7";}
+#mainav .drop::after{top:25px; left:5px;}
+#mainav li li .drop::after{top:15px; left:5px;}
+#mainav ul ul{visibility:hidden; opacity:0;}
+#mainav ul li:hover > ul{visibility:visible; opacity:1;}
+--------------------------------------------------------------------------------------------------------------- */
+table, th, td{border:1px solid; border-collapse:collapse; vertical-align:top;}
+table, th{table-layout:auto;}
+table{width:100%; margin-bottom:15px;}
+th, td{padding:5px 8px;}
+td{border-width:0 1px;}
+
+
+/* Gallery
+--------------------------------------------------------------------------------------------------------------- */
+#gallery{display:block; width:100%; margin-bottom:50px;}
+#gallery figure figcaption{display:block; width:100%; clear:both;}
+#gallery li{margin-bottom:30px;}
+/* Colours
+--------------------------------------------------------------------------------------------------------------- */
+body{color:#474747; background-color:#FFFFFF;}
+a{color:#9D0552;}
+a:active, a:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
+hr, .borderedbox{border-color:#D7D7D7;}
+label span{color:#FF0000; background-color:inherit;}
+input:focus, textarea:focus, *:required:focus{border-color:#56AED4;}
+
+.overlay{color:#FFFFFF; background-color:inherit;}
+.overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
+.overlay.light{color:#474747;}
+.overlay.light::after{background-color:rgba(255,255,255,.7);}
+.btn, .btn.inverse:hover{color:#FFFFFF; background-color:#9D0552; border-color:#9D0552;}
+.btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;}
+#header a{color:inherit;}
+#pageintro{color:#FFFFFF;}
+#mainav{color:#FFFFFF; background-color:#9D0552;}
+#mainav li a{color:inherit;}
+#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#FDABDC; background-color:inherit;}
+#mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgba(157,5,82,.5);/* #9D0552 */ border-color:rgba(0,0,0,.6);}
+#mainav li li:hover > a, #mainav .active .active > a{color:#FDABDC; background-color:#9D0552;}
+#mainav form select{color:#474747; background-color:#FFFFFF;}
+
+#breadcrumb a{color:inherit; background-color:inherit;}
+#breadcrumb li:last-child a{color:#9D0552;}
+
+.container .sidebar nav a{color:inherit; border-color:#D7D7D7;}
+.container .sidebar nav a:hover{color:#9D0552;}
+
+.pagination a, .pagination strong{border-color:#D7D7D7;}
+.pagination .current *{color:#FFFFFF; background-color:#9D0552;}
+
+#backtotop{color:#FFFFFF; background-color:#9D0552;}
+
+
+
+
+
+@-ms-viewport{width:device-width;}
+
+
+
+@media screen and (min-width:978px){
+	.hoc{max-width:978px;}
+}
+
+
+
+}
+
+
+
+}
+
+
+
+}

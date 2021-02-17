@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<title>Movie And Series Database</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout2.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<div class="wrapper row1">
+  <header id="header" class="hoc clear"> 
+    <div id="logo" class="fl_left">
+      <h1><a href="index2.html">Movie And Series Database</a></h1>
+      <h6 >Watch Anything You Want<h6>
+    </div>
+    <div id="quickinfo" class="fl_right">
+    <h2><?php
+          echo "Welcome ".$_COOKIE["sess_user"];
+          ?></h2> 
+      <ul class="nospace inline">
+        <li><a href = "logout.php"><strong>Logut</strong>
+	    
+        <li><a href = "contact.html"><strong>Contact us</strong></a></li><br>
+      </ul>
+    </div>
+  </header>
+  <nav id="mainav" class="hoc clear">
+    <ul class="clear">
+      <li class="active"><a href="index2.html">Home</a></li>
+      <li><a class="drop" href="index3.html">Movies</a></li>
+      <li><a class="drop" href="shows.html">Series</a></li>
+    </ul>
+  </nav>
+</div>
+<div class="wrapper bgded overlay" style="background-image:url('https://free4kwallpapers.com/uploads/originals/2020/05/17/avengers-infinity-war-wallpaper.jpg');">
+  <div id="pageintro" class="hoc clear"> 
+    <article>
+      <h3 class="heading">Movies and Series Database</h3>
+      <p>Watch Anything You Want</p></br>
+	  <a href = "reg.html"><button type = "button">Get Started</button></a>
+    </article>
+  </div>
+</div>
+</body>
+</html>
